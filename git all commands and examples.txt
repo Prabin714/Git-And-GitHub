@@ -1,0 +1,508 @@
+
+C:\Users\prabi\Desktop>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 3C49-8872
+
+ Directory of C:\Users\prabi\Desktop
+
+10-07-2025  09:56    <DIR>          .
+09-07-2025  20:29    <DIR>          ..
+24-03-2025  21:09             1,715 c3.py
+03-07-2025  07:12    <DIR>          Data Science IIT Guwahati
+03-07-2025  14:30    <DIR>          Git And github
+29-07-2024  22:34             2,378 GitHub Desktop.lnk
+07-07-2025  22:59    <DIR>          Jva
+08-01-2025  20:28             2,671 Microsoft Office Excel 2007.lnk
+08-01-2025  20:28             2,661 Microsoft Office PowerPoint 2007.lnk
+08-01-2025  20:28             2,709 Microsoft Office Word 2007.lnk
+09-07-2025  20:28           714,762 scrcpy.exe
+07-07-2025  10:29             1,958 Zoom Workplace.lnk
+               7 File(s)        728,854 bytes
+               5 Dir(s)  93,314,437,120 bytes free
+
+C:\Users\prabi\Desktop>mkdir "Git And GitHub"
+A subdirectory or file Git And GitHub already exists.
+
+C:\Users\prabi\Desktop>mkdir "Git And GitHub"
+
+C:\Users\prabi\Desktop>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 3C49-8872
+
+ Directory of C:\Users\prabi\Desktop
+
+19-07-2025  13:44    <DIR>          .
+09-07-2025  20:29    <DIR>          ..
+24-03-2025  21:09             1,715 c3.py
+03-07-2025  07:12    <DIR>          Data Science IIT Guwahati
+19-07-2025  13:44    <DIR>          Git And GitHub
+29-07-2024  22:34             2,378 GitHub Desktop.lnk
+07-07-2025  22:59    <DIR>          Jva
+08-01-2025  20:28             2,671 Microsoft Office Excel 2007.lnk
+08-01-2025  20:28             2,661 Microsoft Office PowerPoint 2007.lnk
+08-01-2025  20:28             2,709 Microsoft Office Word 2007.lnk
+09-07-2025  20:28           714,762 scrcpy.exe
+07-07-2025  10:29             1,958 Zoom Workplace.lnk
+               7 File(s)        728,854 bytes
+               5 Dir(s)  93,312,913,408 bytes free
+
+C:\Users\prabi\Desktop>cd "Git And GitHub"
+
+C:\Users\prabi\Desktop\Git And GitHub>git init
+Initialized empty Git repository in C:/Users/prabi/Desktop/Git And GitHub/.git/
+
+C:\Users\prabi\Desktop\Git And GitHub>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 3C49-8872
+
+ Directory of C:\Users\prabi\Desktop\Git And GitHub
+
+19-07-2025  13:50    <DIR>          .
+19-07-2025  13:44    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  93,316,526,080 bytes free
+
+C:\Users\prabi\Desktop\Git And GitHub>dir -a
+ Volume in drive C is Windows
+ Volume Serial Number is 3C49-8872
+
+ Directory of C:\Users\prabi\Desktop\Git And GitHub
+
+File Not Found
+
+C:\Users\prabi\Desktop\Git And GitHub>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 3C49-8872
+
+ Directory of C:\Users\prabi\Desktop\Git And GitHub
+
+19-07-2025  13:50    <DIR>          .
+19-07-2025  13:44    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  93,316,583,424 bytes free
+
+C:\Users\prabi\Desktop\Git And GitHub>dir /a
+ Volume in drive C is Windows
+ Volume Serial Number is 3C49-8872
+
+ Directory of C:\Users\prabi\Desktop\Git And GitHub
+
+19-07-2025  13:50    <DIR>          .
+19-07-2025  13:44    <DIR>          ..
+19-07-2025  13:50    <DIR>          .git
+               0 File(s)              0 bytes
+               3 Dir(s)  93,319,626,752 bytes free
+
+C:\Users\prabi\Desktop\Git And GitHub>dir .git
+ Volume in drive C is Windows
+ Volume Serial Number is 3C49-8872
+
+ Directory of C:\Users\prabi\Desktop\Git And GitHub\.git
+
+19-07-2025  13:50    <DIR>          ..
+19-07-2025  13:50               130 config
+19-07-2025  13:50                73 description
+19-07-2025  13:50                23 HEAD
+19-07-2025  13:50    <DIR>          hooks
+19-07-2025  13:50    <DIR>          info
+19-07-2025  13:50    <DIR>          objects
+19-07-2025  13:50    <DIR>          refs
+               3 File(s)            226 bytes
+               5 Dir(s)  93,319,626,752 bytes free
+
+C:\Users\prabi\Desktop\Git And GitHub>echo.> Jva\Methods\abc.java
+The system cannot find the path specified.
+
+C:\Users\prabi\Desktop\Git And GitHub>cd ../
+
+C:\Users\prabi\Desktop>echo.> Jva\Methods\abc.java
+
+C:\Users\prabi\Desktop>cd "Git And GitHub"
+
+C:\Users\prabi\Desktop\Git And GitHub>echo.> names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>echo this is a text file >names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>echo trying new txt >names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>echo adding text without changing or disturbing previous line >>names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>type >>names.txt
+The syntax of the command is incorrect.
+
+C:\Users\prabi\Desktop\Git And GitHub>type >names.txt
+The syntax of the command is incorrect.
+
+C:\Users\prabi\Desktop\Git And GitHub>copy con >names.txt
+heyy type did not work^Z
+
+C:\Users\prabi\Desktop\Git And GitHub>echo This is a new text file >names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        names.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\prabi\Desktop\Git And GitHub>echo Extra text file not for saving history. >Extra.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Extra.txt
+        names.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\prabi\Desktop\Git And GitHub>git add names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   names.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Extra.txt
+
+
+C:\Users\prabi\Desktop\Git And GitHub>git commit -m "Only saved history fornames.txt
+[master (root-commit) 538c46f] Only saved history for names.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>del Extra.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 3C49-8872
+
+ Directory of C:\Users\prabi\Desktop\Git And GitHub
+
+19-07-2025  14:33    <DIR>          .
+19-07-2025  13:44    <DIR>          ..
+19-07-2025  14:17                26 names.txt
+               1 File(s)             26 bytes
+               2 Dir(s)  93,356,474,368 bytes free
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\prabi\Desktop\Git And GitHub>vi namest.txt
+'vi' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\prabi\Desktop\Git And GitHub>vim names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 3C49-8872
+
+ Directory of C:\Users\prabi\Desktop\Git And GitHub
+
+19-07-2025  14:43    <DIR>          .
+19-07-2025  13:44    <DIR>          ..
+19-07-2025  14:43             1,437 .names.txt.un~
+19-07-2025  14:43                88 names.txt
+19-07-2025  14:17                26 names.txt~
+               3 File(s)          1,551 bytes
+               2 Dir(s)  93,347,209,216 bytes free
+
+C:\Users\prabi\Desktop\Git And GitHub>del ".names.txt.un~" "names.txt~"
+
+C:\Users\prabi\Desktop\Git And GitHub>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 3C49-8872
+
+ Directory of C:\Users\prabi\Desktop\Git And GitHub
+
+19-07-2025  14:44    <DIR>          .
+19-07-2025  13:44    <DIR>          ..
+19-07-2025  14:43                88 names.txt
+               1 File(s)             88 bytes
+               2 Dir(s)  93,347,143,680 bytes free
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\prabi\Desktop\Git And GitHub>cat names.txt
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\prabi\Desktop\Git And GitHub>less names.txt
+'less' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\prabi\Desktop\Git And GitHub>type names.txt
+This is a new text file. I am adding the second line using vim.
+Let see what happens.
+
+C:\Users\prabi\Desktop\Git And GitHub>git add .
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   names.txt
+
+
+C:\Users\prabi\Desktop\Git And GitHub>git restore --staged names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\prabi\Desktop\Git And GitHub>git add names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   names.txt
+
+
+C:\Users\prabi\Desktop\Git And GitHub>git commit -m "New lines have been added
+[master d6fb9e2] New lines have been added
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\prabi\Desktop\Git And GitHub>git log
+commit d6fb9e284180f93b7e0067407c75d160e6fec314 (HEAD -> master)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:52:21 2025 +0530
+
+    New lines have been added
+
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+
+    Only saved history for names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\prabi\Desktop\Git And GitHub>del names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\prabi\Desktop\Git And GitHub>git add .
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    names.txt
+
+
+C:\Users\prabi\Desktop\Git And GitHub>git commit -m "Accidental deletion offile
+[master ad70f2b] Accidental deletion of file
+ 1 file changed, 2 deletions(-)
+ delete mode 100644 names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git log
+commit ad70f2b196f8da08bc2bc792225a6192fc13a4e6 (HEAD -> master)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 15:28:36 2025 +0530
+
+    Accidental deletion of file
+
+commit d6fb9e284180f93b7e0067407c75d160e6fec314
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:52:21 2025 +0530
+
+    New lines have been added
+
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+
+    Only saved history for names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git reset 538c46f9b2bd3e776859f3113845469bbb0d70a3
+Unstaged changes after reset:
+D       names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\prabi\Desktop\Git And GitHub>git add .
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    names.txt
+
+
+C:\Users\prabi\Desktop\Git And GitHub>git stash
+Saved working directory and index state WIP on master: 538c46f Only saved history for names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>echo stash file1 > stash1.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>echo.>stash2.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>vim stash2.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .stash2.txt.un~
+        stash1.txt
+        stash2.txt
+        stash2.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\prabi\Desktop\Git And GitHub>del ".stash2.txt.un~" "stash2.txt~"
+
+C:\Users\prabi\Desktop\Git And GitHub>git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        stash1.txt
+        stash2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\prabi\Desktop\Git And GitHub>git add stash1.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git add .
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   stash1.txt
+        new file:   stash2.txt
+
+
+C:\Users\prabi\Desktop\Git And GitHub>git stash
+Saved working directory and index state WIP on master: 538c46f Only saved history for names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git log
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3 (HEAD -> master)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+
+    Only saved history for names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git stash pop
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   stash1.txt
+        new file:   stash2.txt
+
+Dropped refs/stash@{0} (016e4d21b3356fad426674e8b5db1146ec5ff650)
+
+C:\Users\prabi\Desktop\Git And GitHub>git add .
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   stash1.txt
+        new file:   stash2.txt
+
+
+C:\Users\prabi\Desktop\Git And GitHub>git commit -m "New Modifications
+[master d2404f4] New Modifications
+ 2 files changed, 2 insertions(+)
+ create mode 100644 stash1.txt
+ create mode 100644 stash2.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git log
+commit d2404f4ce02c47c1a5ee12d2d85690cdea9dbb40 (HEAD -> master)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 15:54:35 2025 +0530
+
+    New Modifications
+
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+
+    Only saved history for names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git reset 538c46f9b2bd3e776859f3113845469bbb0d70a3
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        stash1.txt
+        stash2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\prabi\Desktop\Git And GitHub>git stash
+No local changes to save
+
+C:\Users\prabi\Desktop\Git And GitHub>git add .
+
+C:\Users\prabi\Desktop\Git And GitHub>git stash
+Saved working directory and index state WIP on master: 538c46f Only saved history for names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>git stash clear
+
+C:\Users\prabi\Desktop\Git And GitHub>git stash pop
+No stash entries found.
+
+C:\Users\prabi\Desktop\Git And GitHub>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\prabi\Desktop\Git And GitHub>git log
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3 (HEAD -> master)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+
+    Only saved history for names.txt
+
+C:\Users\prabi\Desktop\Git And GitHub>
