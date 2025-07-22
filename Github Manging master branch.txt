@@ -1,0 +1,199 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\prabi\Desktop\Git And GitHub> git log
+commit 3b0b0bd96c694a815619fabd29fb117e923696dc (HEAD -> main, origin/main)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:51:46 2025 +0530
+
+    Initial commit
+PS C:\Users\prabi\Desktop\Git And GitHub> git push origin main
+Everything up-to-date
+PS C:\Users\prabi\Desktop\Git And GitHub> git git branch -d master
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+PS C:\Users\prabi\Desktop\Git And GitHub> git branch -d master
+error: the branch 'master' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D master'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+PS C:\Users\prabi\Desktop\Git And GitHub> git branch -D master
+Deleted branch master (was fec6105).
+PS C:\Users\prabi\Desktop\Git And GitHub> git log
+commit 3b0b0bd96c694a815619fabd29fb117e923696dc (HEAD -> main, origin/main)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:51:46 2025 +0530
+
+    Initial commit
+PS C:\Users\prabi\Desktop\Git And GitHub> git push origin main
+Everything up-to-date
+PS C:\Users\prabi\Desktop\Git And GitHub> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        new file:   Branches.txt
+        new file:   git all commands and examples.txt
+        new file:   names.txt
+
+PS C:\Users\prabi\Desktop\Git And GitHub> git add .
+PS C:\Users\prabi\Desktop\Git And GitHub> git commit -m " Merged master and main"
+[main 1193e22]  Merged master and main
+PS C:\Users\prabi\Desktop\Git And GitHub> git log
+commit 1193e22c1b1855e98b679c75e1cb1809826ae518 (HEAD -> main)
+Merge: 3b0b0bd fec6105
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:46:04 2025 +0530
+
+     Merged master and main
+
+commit fec61053ba9573e30cdd166d80641e5d08be5b56 (origin/master)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:00:27 2025 +0530
+
+    New file created to understand branches
+
+commit 3b0b0bd96c694a815619fabd29fb117e923696dc (origin/main)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:51:46 2025 +0530
+
+    Initial commit
+
+commit 31e8989dcdb0040a370a5261ad1e6e528c1bd545
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:49:43 2025 +0530
+
+    Git commands from previous lecture
+
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+
+...skipping...
+
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Right one half screen width (or N positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or N positions).
+  ESC-}  ^RightArrow   Right to last column displayed.
+  ESC-{  ^LeftArrow    Left  to first column.
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+HELP -- Press RETURN for more, or q when done...skipping...
+commit 1193e22c1b1855e98b679c75e1cb1809826ae518 (HEAD -> main)
+Merge: 3b0b0bd fec6105
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:46:04 2025 +0530
+
+     Merged master and main
+
+commit fec61053ba9573e30cdd166d80641e5d08be5b56 (origin/master)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:00:27 2025 +0530
+
+    New file created to understand branches
+
+commit 3b0b0bd96c694a815619fabd29fb117e923696dc (origin/main)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:51:46 2025 +0530
+
+    Initial commit
+
+commit 31e8989dcdb0040a370a5261ad1e6e528c1bd545
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:49:43 2025 +0530
+
+    Git commands from previous lecture
+
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+
+PS C:\Users\prabi\Desktop\Git And GitHub> git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+PS C:\Users\prabi\Desktop\Git And GitHub> git reset --hard master
+fatal: ambiguous argument 'master': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+PS C:\Users\prabi\Desktop\Git And GitHub> git branch -d master
+error: branch 'master' not found
+PS C:\Users\prabi\Desktop\Git And GitHub> git push origin --delete master
+To https://github.com/Prabin714/Git-And-GitHub
+ - [deleted]         master
+PS C:\Users\prabi\Desktop\Git And GitHub> git log
+commit 1193e22c1b1855e98b679c75e1cb1809826ae518 (HEAD -> main)
+Merge: 3b0b0bd fec6105
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:46:04 2025 +0530
+
+     Merged master and main
+
+commit fec61053ba9573e30cdd166d80641e5d08be5b56
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:00:27 2025 +0530
+
+    New file created to understand branches
+
+commit 3b0b0bd96c694a815619fabd29fb117e923696dc (origin/main)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:51:46 2025 +0530
+
+    Initial commit
+
+commit 31e8989dcdb0040a370a5261ad1e6e528c1bd545
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:49:43 2025 +0530
+
+    Git commands from previous lecture
+
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+
+    Only saved history for names.txt
+PS C:\Users\prabi\Desktop\Git And GitHub> git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\prabi\Desktop\Git And GitHub> git push origin main
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 3.37 KiB | 215.00 KiB/s, done.
+Total 11 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Prabin714/Git-And-GitHub
+   3b0b0bd..1193e22  main -> main
+PS C:\Users\prabi\Desktop\Git And GitHub>
