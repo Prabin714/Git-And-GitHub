@@ -1,0 +1,519 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\prabi\Desktop\Git And GitHub> git branch merging_branches
+PS C:\Users\prabi\Desktop\Git And GitHub> git checkout merging_branches
+Switched to branch 'merging_branches'
+PS C:\Users\prabi\Desktop\Git And GitHub> echo.>Merging.txt
+echo.>Merging.txt : The term 'echo.>Merging.txt' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling
+of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ echo.>Merging.txt
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (echo.>Merging.txt:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\prabi\Desktop\Git And GitHub> echo.> Merging.txt
+echo.> : The term 'echo.>' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a
+path was included, verify that the path is correct and try again.
+At line:1 char:1
++ echo.> Merging.txt
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (echo.>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\prabi\Desktop\Git And GitHub> echo .> merging.txt
+.>
+merging.txt
+PS C:\Users\prabi\Desktop\Git And GitHub> git status
+On branch merging_branches
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Github Manging master branch.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\prabi\Desktop\Git And GitHub> git log
+commit 1193e22c1b1855e98b679c75e1cb1809826ae518 (HEAD -> merging_branches, origin/main, main)
+Merge: 3b0b0bd fec6105
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:46:04 2025 +0530
+
+     Merged master and main
+
+commit fec61053ba9573e30cdd166d80641e5d08be5b56
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:00:27 2025 +0530
+
+    New file created to understand branches
+
+commit 3b0b0bd96c694a815619fabd29fb117e923696dc
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:51:46 2025 +0530
+
+    Initial commit
+
+commit 31e8989dcdb0040a370a5261ad1e6e528c1bd545
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:49:43 2025 +0530
+
+    Git commands from previous lecture
+
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+
+    Only saved history for names.txt
+PS C:\Users\prabi\Desktop\Git And GitHub> dir
+
+
+    Directory: C:\Users\prabi\Desktop\Git And GitHub
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        21-07-2025     22:39             76 Branches.txt
+-a----        21-07-2025     22:39          16591 git all commands and examples.txt
+-a----        21-07-2025     22:52           7625 Github Manging master branch.txt
+-a----        21-07-2025     22:39             26 names.txt
+-a----        21-07-2025     22:28             88 README.md
+
+
+PS C:\Users\prabi\Desktop\Git And GitHub> dir /a
+dir : Cannot find path 'C:\a' because it does not exist.
+At line:1 char:1
++ dir /a
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\a:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\Users\prabi\Desktop\Git And GitHub> dir /a
+dir : Cannot find path 'C:\a' because it does not exist.
+At line:1 char:1
++ dir /a
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\a:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\Users\prabi\Desktop\Git And GitHub> dir .a
+dir : Cannot find path 'C:\Users\prabi\Desktop\Git And GitHub\.a' because it does not exist.
+At line:1 char:1
++ dir .a
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\prabi\Desktop\Git And GitHub\.a:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\Users\prabi\Desktop\Git And GitHub> dir \a
+dir : Cannot find path 'C:\a' because it does not exist.
+At line:1 char:1
++ dir \a
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\a:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\Users\prabi\Desktop\Git And GitHub> git status
+On branch merging_branches
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Github Manging master branch.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\prabi\Desktop\Git And GitHub> git add .
+PS C:\Users\prabi\Desktop\Git And GitHub> git commit -m "Trying to merge two branches"
+[merging_branches 16b58f4] Trying to merge two branches
+ 1 file changed, 199 insertions(+)
+ create mode 100644 Github Manging master branch.txt
+PS C:\Users\prabi\Desktop\Git And GitHub> git log
+commit 16b58f407386f567ae7f390b3ab86413c06d116d (HEAD -> merging_branches)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Tue Jul 22 09:17:31 2025 +0530
+
+    Trying to merge two branches
+
+commit 1193e22c1b1855e98b679c75e1cb1809826ae518 (origin/main, main)
+Merge: 3b0b0bd fec6105
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:46:04 2025 +0530
+
+     Merged master and main
+
+commit fec61053ba9573e30cdd166d80641e5d08be5b56
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:00:27 2025 +0530
+
+    New file created to understand branches
+
+commit 3b0b0bd96c694a815619fabd29fb117e923696dc
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:51:46 2025 +0530
+
+    Initial commit
+
+commit 31e8989dcdb0040a370a5261ad1e6e528c1bd545
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:49:43 2025 +0530
+
+    Git commands from previous lecture
+
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+
+    Only saved history for names.txt
+PS C:\Users\prabi\Desktop\Git And GitHub> git merge merging_branches
+Already up to date.
+PS C:\Users\prabi\Desktop\Git And GitHub> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\prabi\Desktop\Git And GitHub> git merge merging_branches
+Updating 1193e22..16b58f4
+Fast-forward
+ Github Manging master branch.txt | 199 +++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 199 insertions(+)
+ create mode 100644 Github Manging master branch.txt
+PS C:\Users\prabi\Desktop\Git And GitHub> git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.25 KiB | 2.25 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Prabin714/Git-And-GitHub
+   1193e22..16b58f4  main -> main
+PS C:\Users\prabi\Desktop\Git And GitHub> git checkout managing_branches
+error: pathspec 'managing_branches' did not match any file(s) known to git
+PS C:\Users\prabi\Desktop\Git And GitHub> git checkout merging_branches
+Switched to branch 'merging_branches'
+PS C:\Users\prabi\Desktop\Git And GitHub> echo Uploading a file in a new branch. > mbranch.txt
+PS C:\Users\prabi\Desktop\Git And GitHub> git status
+On branch merging_branches
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mbranch.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\prabi\Desktop\Git And GitHub> git add .
+PS C:\Users\prabi\Desktop\Git And GitHub> git status
+On branch merging_branches
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   mbranch.txt
+
+PS C:\Users\prabi\Desktop\Git And GitHub> git commit -m "Pushing new Branch"
+[merging_branches 05098cf] Pushing new Branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mbranch.txt
+PS C:\Users\prabi\Desktop\Git And GitHub> git log
+commit 05098cf596b75b20d3688ba500bb979b4ac1c692 (HEAD -> merging_branches)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Tue Jul 22 10:09:34 2025 +0530
+
+    Pushing new Branch
+
+commit 16b58f407386f567ae7f390b3ab86413c06d116d (origin/main, main)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Tue Jul 22 09:17:31 2025 +0530
+
+    Trying to merge two branches
+
+commit 1193e22c1b1855e98b679c75e1cb1809826ae518
+Merge: 3b0b0bd fec6105
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:46:04 2025 +0530
+
+     Merged master and main
+
+commit fec61053ba9573e30cdd166d80641e5d08be5b56
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:00:27 2025 +0530
+
+    New file created to understand branches
+
+commit 3b0b0bd96c694a815619fabd29fb117e923696dc
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:51:46 2025 +0530
+
+    Initial commit
+
+commit 31e8989dcdb0040a370a5261ad1e6e528c1bd545
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:49:43 2025 +0530
+
+    Git commands from previous lecture
+
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+PS C:\Users\prabi\Desktop\Git And GitHub> git push origin merging_branchs
+error: src refspec merging_branchs does not match any
+error: failed to push some refs to 'https://github.com/Prabin714/Git-And-GitHub'
+PS C:\Users\prabi\Desktop\Git And GitHub> git push origin merging_branches
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 336 bytes | 336.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'merging_branches' on GitHub by visiting:
+remote:      https://github.com/Prabin714/Git-And-GitHub/pull/new/merging_branches
+remote:
+To https://github.com/Prabin714/Git-And-GitHub
+ * [new branch]      merging_branches -> merging_branches
+PS C:\Users\prabi\Desktop\Git And GitHub> git log
+commit 05098cf596b75b20d3688ba500bb979b4ac1c692 (HEAD -> merging_branches, origin/merging_branches)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Tue Jul 22 10:09:34 2025 +0530
+
+    Pushing new Branch
+
+commit 16b58f407386f567ae7f390b3ab86413c06d116d (origin/main, main)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Tue Jul 22 09:17:31 2025 +0530
+
+    Trying to merge two branches
+
+commit 1193e22c1b1855e98b679c75e1cb1809826ae518
+Merge: 3b0b0bd fec6105
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:46:04 2025 +0530
+
+     Merged master and main
+
+commit fec61053ba9573e30cdd166d80641e5d08be5b56
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:00:27 2025 +0530
+
+    New file created to understand branches
+
+commit 3b0b0bd96c694a815619fabd29fb117e923696dc
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:51:46 2025 +0530
+
+    Initial commit
+
+commit 31e8989dcdb0040a370a5261ad1e6e528c1bd545
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:49:43 2025 +0530
+
+    Git commands from previous lecture
+
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+PS C:\Users\prabi\Desktop\Git And GitHub> git chechout main
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+PS C:\Users\prabi\Desktop\Git And GitHub> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\prabi\Desktop\Git And GitHub> git log
+commit 16b58f407386f567ae7f390b3ab86413c06d116d (HEAD -> main, origin/main)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Tue Jul 22 09:17:31 2025 +0530
+
+    Trying to merge two branches
+
+commit 1193e22c1b1855e98b679c75e1cb1809826ae518
+Merge: 3b0b0bd fec6105
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:46:04 2025 +0530
+
+     Merged master and main
+
+commit fec61053ba9573e30cdd166d80641e5d08be5b56
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:00:27 2025 +0530
+
+    New file created to understand branches
+
+commit 3b0b0bd96c694a815619fabd29fb117e923696dc
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:51:46 2025 +0530
+
+    Initial commit
+
+commit 31e8989dcdb0040a370a5261ad1e6e528c1bd545
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:49:43 2025 +0530
+
+    Git commands from previous lecture
+
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+
+    Only saved history for names.txt
+PS C:\Users\prabi\Desktop\Git And GitHub> git log
+commit 16b58f407386f567ae7f390b3ab86413c06d116d (HEAD -> main, origin/main)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Tue Jul 22 09:17:31 2025 +0530
+
+    Trying to merge two branches
+
+commit 1193e22c1b1855e98b679c75e1cb1809826ae518
+Merge: 3b0b0bd fec6105
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:46:04 2025 +0530
+
+     Merged master and main
+
+commit fec61053ba9573e30cdd166d80641e5d08be5b56
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:00:27 2025 +0530
+
+    New file created to understand branches
+
+commit 3b0b0bd96c694a815619fabd29fb117e923696dc
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:51:46 2025 +0530
+
+    Initial commit
+
+commit 31e8989dcdb0040a370a5261ad1e6e528c1bd545
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:49:43 2025 +0530
+
+    Git commands from previous lecture
+
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+
+    Only saved history for names.txt
+PS C:\Users\prabi\Desktop\Git And GitHub> git checkout merging_branches
+Switched to branch 'merging_branches'
+PS C:\Users\prabi\Desktop\Git And GitHub> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\prabi\Desktop\Git And GitHub> git merge meging_branches
+merge: meging_branches - not something we can merge
+PS C:\Users\prabi\Desktop\Git And GitHub> git merge merging_branches
+Updating 16b58f4..05098cf
+Fast-forward
+ mbranch.txt | Bin 0 -> 84 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mbranch.txt
+PS C:\Users\prabi\Desktop\Git And GitHub> git push origin main
+To https://github.com/Prabin714/Git-And-GitHub
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Prabin714/Git-And-GitHub'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\prabi\Desktop\Git And GitHub> git push --help
+PS C:\Users\prabi\Desktop\Git And GitHub> git pull origin main
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 902 bytes | 128.00 KiB/s, done.
+From https://github.com/Prabin714/Git-And-GitHub
+ * branch            main       -> FETCH_HEAD
+   16b58f4..abd8968  main       -> origin/main
+Updating 05098cf..abd8968
+Fast-forward
+PS C:\Users\prabi\Desktop\Git And GitHub> git branch -d merging_branch
+error: branch 'merging_branch' not found
+PS C:\Users\prabi\Desktop\Git And GitHub> git branch -d merging_branches
+Deleted branch merging_branches (was 05098cf).
+PS C:\Users\prabi\Desktop\Git And GitHub> git checkout merging_branches
+branch 'merging_branches' set up to track 'origin/merging_branches'.
+Switched to a new branch 'merging_branches'
+PS C:\Users\prabi\Desktop\Git And GitHub> git log
+commit 05098cf596b75b20d3688ba500bb979b4ac1c692 (HEAD -> merging_branches, origin/merging_branches)
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Tue Jul 22 10:09:34 2025 +0530
+
+    Pushing new Branch
+
+commit 16b58f407386f567ae7f390b3ab86413c06d116d
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Tue Jul 22 09:17:31 2025 +0530
+
+    Trying to merge two branches
+
+commit 1193e22c1b1855e98b679c75e1cb1809826ae518
+Merge: 3b0b0bd fec6105
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:46:04 2025 +0530
+
+     Merged master and main
+
+commit fec61053ba9573e30cdd166d80641e5d08be5b56
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:00:27 2025 +0530
+
+    New file created to understand branches
+
+commit 3b0b0bd96c694a815619fabd29fb117e923696dc
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:51:46 2025 +0530
+
+    Initial commit
+
+commit 31e8989dcdb0040a370a5261ad1e6e528c1bd545
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:49:43 2025 +0530
+
+    Git commands from previous lecture
+
+commit 538c46f9b2bd3e776859f3113845469bbb0d70a3
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Sat Jul 19 14:31:03 2025 +0530
+PS C:\Users\prabi\Desktop\Git And GitHub> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\prabi\Desktop\Git And GitHub> git branch -d merging_branches
+Deleted branch merging_branches (was 05098cf).
+PS C:\Users\prabi\Desktop\Git And GitHub> git push origin --delete merging_branches
+To https://github.com/Prabin714/Git-And-GitHub
+ - [deleted]         merging_branches
+PS C:\Users\prabi\Desktop\Git And GitHub> git log
+commit abd8968ef5cf00ded323bf7d9c40e4d30f217826 (HEAD -> main, origin/main)
+Merge: 16b58f4 05098cf
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Tue Jul 22 10:22:27 2025 +0530
+
+    Merge pull request #1 from Prabin714/merging_branches
+
+    Pushing new Branch
+
+commit 05098cf596b75b20d3688ba500bb979b4ac1c692
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Tue Jul 22 10:09:34 2025 +0530
+
+    Pushing new Branch
+
+commit 16b58f407386f567ae7f390b3ab86413c06d116d
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Tue Jul 22 09:17:31 2025 +0530
+
+    Trying to merge two branches
+
+commit 1193e22c1b1855e98b679c75e1cb1809826ae518
+Merge: 3b0b0bd fec6105
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:46:04 2025 +0530
+
+     Merged master and main
+
+commit fec61053ba9573e30cdd166d80641e5d08be5b56
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 22:00:27 2025 +0530
+
+    New file created to understand branches
+
+commit 3b0b0bd96c694a815619fabd29fb117e923696dc
+Author: Prabin <prabinsharma.mdt@gmail.com>
+Date:   Mon Jul 21 21:51:46 2025 +0530
+
+    Initial commit
+
+PS C:\Users\prabi\Desktop\Git And GitHub>
